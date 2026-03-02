@@ -32,7 +32,7 @@ Low complexity, high consequence. Credentials in client-side HTML are exposed to
 ---
 
 ### Mitigation
-Sensitive data should never touch the client side. Credentials and secrets belong in server-side environment variables or a secrets manager. HTML comments are stripped in build pipelines for exactly this reason — if yours aren't, they should be.
+Sensitive data should never touch the client side. Credentials and secrets belong in server-side environment variables or a secrets manager. HTML comments are stripped in build pipelines for exactly this reason.
 
 ---
 
@@ -65,7 +65,7 @@ This level adds a JavaScript-based right-click blocker to the mix — presumably
 ---
 
 ### Impact
-Any protection enforced purely in JavaScript can be bypassed by the end user. Sites that rely on disabled right-click to "protect" images, text, or source code give themselves a false sense of security. A malicious user — or an intern doing a quick pentest — will get through in seconds.
+Any protection enforced purely in JavaScript can be bypassed by the end user. Sites that rely on disabled right-click to "protect" images, text, or source code give themselves a false sense of security. A malicious user would get through in seconds.
 
 ---
 
